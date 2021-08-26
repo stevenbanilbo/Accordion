@@ -2,40 +2,44 @@
     
     padding: 15px;
     background-color: #fff;
-    margin: 20;
+    margin: 10;
     width: 700px;
     border: 1px solid grey;
-    border-radius: 5%;
+
   }
   
   .row{
     display: flex;
-    
+    margin: 0;
+    padding: 0;
 
   }
   
   .column {
-    
+    display: inline-block;
     flex: 50%;
-    float: left;
-    margin-right: 5px;
- 
+    margin-right: 1em;
+   
   }
   
+  h1{
+
+    font-size: 32px;
+  }
 
   .accordion {
     
     width: 100%;
     color: #444;
     cursor: pointer;
-    margin: 0;
-    border: 1px solid black;
+    margin: 10px 0;
+    padding: 10 0;
     outline: none;
     transition: 0.4s;
   }
   .panel {
       
-    background-color: lemonchiffon;
+    background-color: rgb(243, 246, 253);
     display: none;
     overflow: hidden;
   }
@@ -71,25 +75,36 @@
   .accordion-trigger:hover .accordion-icon {
     border-color: black;
   }
-  .accordion-trigger[aria-expanded="true"] .accordion-icon {
-  transform: translateY(-50%) rotate(55deg);
-  }
-  .accordion-panel {
-    margin: 0;
-    padding: 1em 1.5em;
-  }
-  
+  /* .accordion-trigger[aria-expanded="true"] .accordion-icon::after {
+    
+    -webkit-transform: translateY(30%) rotate(-135deg);
+    -moz-transform: translateY(30%) rotate(-135deg);
+    transform: translateY(30%) rotate(-135deg);
+} */
+
+
+
+
 input, button{
 
-padding:15px 10px;
-border-radius: 10px;
-margin: 5px 10px;
+
+padding:22px 0;
+border-radius: 5px;
+
 
 }
 
 .labels{
 
     font-size: 19px;
-    color: black;
+    color: grey;
     font-family: 'Times New Roman', Times, serif;
+}
+
+input{
+  
+  width: 98%;
+  margin-top: 10px;
+  
+  
 }
